@@ -14,6 +14,15 @@ Después abrí `http://localhost:8080`. Para usarla en una partida, publicá est
 archivos con GitHub Pages, Netlify, Vercel o cualquier hosting estático y
 generá el QR con esa URL.
 
+## Accesos por equipo
+
+- `alfa/`: inteligencia clasificada del Equipo Alfa.
+- `omega/`: inteligencia clasificada del Equipo Omega.
+
+Cada carpeta tiene su propio `index.html`, por lo que cada QR puede apuntar a
+una URL distinta. Los archivos `classified.css` y `classified.js` comparten la
+animación y el comportamiento visual entre ambos accesos.
+
 ## Personalizar
 
 - Editá la misión, las reglas y la inteligencia directamente en `index.html`.

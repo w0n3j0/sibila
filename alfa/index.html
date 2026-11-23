@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080c0a" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Equipo Alfa · Enlace clasificado</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../classified.css" />
+  </head>
+  <body data-team="alfa">
+    <div class="noise" aria-hidden="true"></div>
+    <section class="intro classified-intro" id="intro" aria-labelledby="intro-title">
+      <div class="intro-grid" aria-hidden="true"></div>
+      <div class="scan-line" aria-hidden="true"></div>
+      <div class="radar" aria-hidden="true">
+        <span class="radar-ring"></span><span class="radar-ring radar-ring-two"></span>
+        <span class="radar-ring radar-ring-three"></span><span class="radar-axis radar-axis-x"></span>
+        <span class="radar-axis radar-axis-y"></span><span class="radar-sweep"></span>
+        <span class="target-dot target-dot-one"></span><span class="target-dot target-dot-two"></span>
+      </div>
+      <div class="intro-content">
+        <div class="classification">NIVEL 4 // SOLO EQUIPO ALFA</div>
+        <p class="eyebrow">Enlace clasificado detectado</p>
+        <h1 id="intro-title">EQUIPO<br /><span>ALFA</span></h1>
+        <div class="loading-status" aria-live="polite">
+          <span id="loading-text">Analizando huella del enlace</span>
+          <strong id="loading-progress">00%</strong>
+        </div>
+        <div class="progress-track" aria-hidden="true"><span id="progress-bar"></span></div>
+        <div class="data-strip" aria-hidden="true"><span>NO COMPARTIR</span><span>CANAL A-17</span><span>UNA LECTURA</span></div>
+      </div>
+      <button class="skip-intro" id="skip-intro" type="button">Omitir acceso</button>
+    </section>
+
+    <main class="app classified-app hidden" id="app">
+      <header class="topbar">
+        <a class="brand" href="../" aria-label="Volver al briefing general">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span>EQUIPO <b>ALFA</b></span>
+        </a>
+        <div class="topbar-status"><span class="live-dot"></span><span>INTELIGENCIA ACTIVA</span></div>
+      </header>
+
+      <section class="classified-hero">
+        <div class="classified-kicker"><span>VENTAJA TÁCTICA</span><small>Acceso A-17 // Clasificación máxima</small></div>
+        <h1>Tenemos la <span>ventana norte.</span></h1>
+        <p>
+          Una falla en el patrón de patrulla del equipo rival abre un corredor
+          hacia el núcleo. La ventana dura 4 minutos y comienza al recibir la
+          señal de radio “AURORA”.
+        </p>
+      </section>
+
+      <div class="authorization">
+        <div><span>Destino autorizado</span><strong>Equipo Alfa</strong></div>
+        <div><span>Validez operativa</span><strong class="clearance">Hasta captura del núcleo</strong></div>
+      </div>
+
+      <section class="briefing-grid">
+        <article class="intel-lead">
+          <p class="card-index">INFORMACIÓN PRIORITARIA // 01</p>
+          <h2>Ruta lateral sin cobertura enemiga</h2>
+          <p>
+            El acceso útil no es el camino visible entre containers. Rodeá el
+            galpón por el sector norte y avanzá por la línea de neumáticos.
+            Desde allí pueden observar la torre sin quedar expuestos al
+            corredor principal.
+          </p>
+          <div class="advantage-strip">
+            <div><span>Ventana</span><b class="advantage-value">04:00</b></div>
+            <div><span>Rumbo</span><b class="advantage-value">N-NE</b></div>
+            <div><span>Beneficio</span><b class="advantage-value">Flanqueo</b></div>
+          </div>
+        </article>
+        <aside class="team-code">
+          <div>
+            <p class="card-index">CÓDIGO PARA CONTROL</p>
+            <strong id="mission-code">AURORA-17</strong>
+            <p>
+              Mostrá este código al coordinador solo al llegar al núcleo. Si es
+              válido, obtienen un punto táctico de extracción adicional.
+            </p>
+          </div>
+          <button class="copy-code" id="copy-code" type="button">Copiar código</button>
+        </aside>
+      </section>
+
+      <section class="sequence">
+        <p class="eyebrow">Secuencia recomendada</p>
+        <h2>Cómo aprovechar la apertura</h2>
+        <div class="sequence-list">
+          <article class="sequence-step" data-step="01">
+            <span class="sequence-number">FASE 01 // DISTRAER</span>
+            <h3>Marcar presencia al sur</h3>
+            <p>Enviá dos operadores a hacer contacto visual desde la valla sur. No expongan toda la formación.</p>
+          </article>
+          <article class="sequence-step" data-step="02">
+            <span class="sequence-number">FASE 02 // MOVER</span>
+            <h3>Avanzar por la línea norte</h3>
+            <p>Al escuchar “AURORA”, el binomio de asalto ingresa por neumáticos. Mantener radio abierta.</p>
+          </article>
+          <article class="sequence-step" data-step="03">
+            <span class="sequence-number">FASE 03 // ASEGURAR</span>
+            <h3>Retirar en sentido contrario</h3>
+            <p>Con el núcleo, no vuelvan por la misma ruta. La salida marcada al oeste evita el cruce central.</p>
+          </article>
+        </div>
+        <div class="field-warning">
+          <span aria-hidden="true">△</span>
+          <p><strong>ALERTA:</strong> la apertura depende de una patrulla enemiga. Si detectan movimiento, aborten el flanqueo y prioricen la seguridad.</p>
+        </div>
+      </section>
+
+      <footer>
+        <p>OPERACIÓN ECLIPSE <span>·</span> ARCHIVO ALFA / A-17</p>
+        <button id="replay-intro" type="button">Reproducir autorización ↗</button>
+      </footer>
+    </main>
+    <script src="../classified.js"></script>
+  </body>
+</html>
