@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080c0a" />
+    <meta
+      name="description"
+      content="Briefing táctico de Operación Eclipse: misión, equipos y personal operativo."
+    />
+    <title>Operación Eclipse · Briefing táctico</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+
+    <section class="intro" id="intro" aria-labelledby="intro-title">
+      <div class="intro-grid" aria-hidden="true"></div>
+      <div class="scan-line" aria-hidden="true"></div>
+      <div class="radar" aria-hidden="true">
+        <span class="radar-ring radar-ring-one"></span>
+        <span class="radar-ring radar-ring-two"></span>
+        <span class="radar-ring radar-ring-three"></span>
+        <span class="radar-axis radar-axis-x"></span>
+        <span class="radar-axis radar-axis-y"></span>
+        <span class="radar-sweep"></span>
+        <span class="target-dot target-dot-one"></span>
+        <span class="target-dot target-dot-two"></span>
+      </div>
+      <div class="intro-content">
+        <div class="classification">ENLACE SEGURO // CANAL 07</div>
+        <p class="eyebrow">Accediendo al briefing</p>
+        <h1 id="intro-title">OPERACIÓN<br /><span>ECLIPSE</span></h1>
+        <div class="loading-status" aria-live="polite">
+          <span id="loading-text">Verificando credenciales</span>
+          <strong id="loading-progress">00%</strong>
+        </div>
+        <div class="progress-track" aria-hidden="true">
+          <span id="progress-bar"></span>
+        </div>
+        <div class="data-strip" aria-hidden="true">
+          <span>LAT 34°36' S</span><span>ENCRIPTADO</span><span>24.11.26</span>
+        </div>
+      </div>
+      <button class="skip-intro" id="skip-intro" type="button">Omitir acceso</button>
+    </section>
+
+    <main class="app hidden" id="app">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Inicio de Operación Eclipse">
+          <span class="brand-mark" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+          <span>OPERACIÓN <b>ECLIPSE</b></span>
+        </a>
+        <div class="topbar-status">
+          <span class="live-dot"></span>
+          <span>CANAL ACTIVO</span>
+        </div>
+      </header>
+
+      <div class="operation-banner">
+        <div>
+          <p class="eyebrow">Briefing operativo // 24 NOV 2026</p>
+          <h2>La señal está <em>en el aire.</em></h2>
+          <p class="intro-copy">
+            Dos equipos. Un área de operaciones. La información correcta puede
+            cambiar el resultado antes del primer disparo.
+          </p>
+        </div>
+        <div class="mission-clock">
+          <span>Inicio estimado</span>
+          <strong id="countdown">01:42:00</strong>
+          <div><i></i> En espera de despliegue</div>
+        </div>
+      </div>
+
+      <nav class="section-nav" aria-label="Secciones del briefing">
+        <a class="active" href="#mission">01. Misión</a>
+        <a href="#teams">02. Equipos</a>
+        <a href="#intel">03. Inteligencia</a>
+      </nav>
+
+      <section id="mission" class="mission-section">
+        <article class="mission-card">
+          <div class="card-index">OBJETIVO PRINCIPAL / 01</div>
+          <h3>RECUPERAR EL NÚCLEO</h3>
+          <p>
+            Localizá el contenedor de señal en la zona central y trasladalo
+            hasta tu punto de extracción antes de que finalice el tiempo.
+          </p>
+          <div class="objective-meta">
+            <div>
+              <span>Área</span>
+              <strong>Sector 04</strong>
+            </div>
+            <div>
+              <span>Duración</span>
+              <strong>45 min</strong>
+            </div>
+            <div>
+              <span>Puntos</span>
+              <strong>+ 300</strong>
+            </div>
+          </div>
+        </article>
+
+        <aside class="rules-card">
+          <div class="card-index">REGLAS DE CAMPO</div>
+          <ol>
+            <li><span>01</span>El golpe de BB cuenta. Sin excepciones.</li>
+            <li><span>02</span>Gafas cerradas dentro de la zona activa.</li>
+            <li><span>03</span>Ante “ALTO”, todos congelan la posición.</li>
+          </ol>
+        </aside>
+      </section>
+
+      <section id="teams" class="teams-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Personal desplegado</p>
+            <h3>ORDEN DE COMBATE</h3>
+          </div>
+          <div class="team-tabs" role="tablist" aria-label="Filtrar equipos">
+            <button class="team-tab active" type="button" data-filter="todos" role="tab" aria-selected="true">
+              Todos <span id="all-count">8</span>
+            </button>
+            <button class="team-tab" type="button" data-filter="alfa" role="tab" aria-selected="false">
+              Alfa <span>4</span>
+            </button>
+            <button class="team-tab" type="button" data-filter="omega" role="tab" aria-selected="false">
+              Omega <span>4</span>
+            </button>
+          </div>
+        </div>
+        <div class="team-list" id="team-list"></div>
+      </section>
+
+      <section id="intel" class="intel-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Información clasificada</p>
+            <h3>INTELIGENCIA DE CAMPO</h3>
+          </div>
+          <span class="intel-stamp">ÚLTIMA ACTUALIZACIÓN · 14:18</span>
+        </div>
+        <div class="intel-grid">
+          <article class="intel-card">
+            <div class="intel-icon" aria-hidden="true">⌖</div>
+            <p class="card-index">PUNTO DE INTERÉS</p>
+            <h4>TORRE DE RADIO</h4>
+            <p>
+              Ubicación elevada con línea de visión sobre el corredor norte.
+              Ideal para observación, vulnerable desde el oeste.
+            </p>
+            <span class="threat threat-high">ALTA EXPOSICIÓN</span>
+          </article>
+          <article class="intel-card">
+            <div class="intel-icon" aria-hidden="true">◇</div>
+            <p class="card-index">CONDICIÓN DEL TERRENO</p>
+            <h4>PASO ESTRECHO</h4>
+            <p>
+              El sector de containers reduce la movilidad. Evitá quedarte
+              aislado y mantené una vía de retirada.
+            </p>
+            <span class="threat threat-medium">PRECAUCIÓN</span>
+          </article>
+          <article class="map-card">
+            <div class="map-grid" aria-hidden="true">
+              <span class="map-route route-one"></span>
+              <span class="map-route route-two"></span>
+              <span class="map-point point-a">A</span>
+              <span class="map-point point-b">B</span>
+              <span class="map-target">NÚCLEO</span>
+            </div>
+            <div class="map-label">
+              <span>SECTOR 04 // ESQUEMA</span>
+              <strong>NO USAR COMO CARTOGRAFÍA</strong>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <footer>
+        <p>OPERACIÓN ECLIPSE <span>·</span> SISTEMA DE BRIEFING TÁCTICO</p>
+        <button id="replay-intro" type="button">Reproducir secuencia de acceso ↗</button>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
